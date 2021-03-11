@@ -1,0 +1,59 @@
+<body> 
+<div class="container">
+    <form class="main">
+        <h1>Form Title</h1>
+        <div class="main_up">
+        <mat-form-field appearance="outline" class="main_up_form" >
+            <mat-label>Input label</mat-label>
+            <input matInput placeholder="Placeholder" [(ngModel)]="firstInput" name="firstInput">
+            <button mat-button *ngIf="firstInput" matSuffix mat-icon-button aria-label="Clear" (click)="firstInput=''">
+              <mat-icon>close</mat-icon>
+            </button> 
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="main_up_form">
+            <mat-label>Input label</mat-label>
+            <input matInput placeholder="Placeholder"[(ngModel)]="secondInput" name="secondInput">
+            <button mat-button *ngIf="secondInput" matSuffix mat-icon-button aria-label="Clear" (click)="secondInput=''">
+                <mat-icon>close</mat-icon>
+              </button>            
+          </mat-form-field>
+        </div>
+        <div class="main_radio">
+        <mat-radio-group aria-label="About experience">
+          <p>Experience with Angular 10</p>
+          <mat-radio-button value="0"style="margin-right: 36%;">No</mat-radio-button>
+          <mat-radio-button checked>Yes</mat-radio-button>
+        </mat-radio-group>
+        <mat-radio-group  aria-label="About task">
+          <p>Estimate for the task - 4h</p>
+          <mat-radio-button value="0"style="margin-right: 36%;">No</mat-radio-button>
+          <mat-radio-button checked>Yes</mat-radio-button>
+        </mat-radio-group>    
+      </div> 
+      <div class="main_inputs">
+      <mat-form-field appearance="outline">
+        <mat-label>Input label</mat-label>
+        <input matInput placeholder="Placeholder"[(ngModel)]="thirdInput" name="thirdInput">
+        <button mat-button *ngIf="thirdInput" matSuffix mat-icon-button aria-label="Clear" (click)="thirdInput=''">
+            <mat-icon>close</mat-icon>
+          </button>            
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Input label</mat-label>
+        <input matInput placeholder="Placeholder"[(ngModel)]="fourthInput" name="fourthInput">
+        <button mat-button *ngIf="fourthInput" matSuffix mat-icon-button aria-label="Clear" (click)="fourthInput=''">
+            <mat-icon>close</mat-icon>
+          </button>            
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Input label</mat-label>
+        <input matInput placeholder="Placeholder"[(ngModel)]="fifthInput" name="fifthInput">
+        <button mat-button *ngIf="fifthInput" matSuffix mat-icon-button aria-label="Clear" (click)="fifthInput=''">
+            <mat-icon>close</mat-icon>
+          </button>            
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary">Next</button>
+    </form>
+</div>
+</body>
